@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="anchorPaneChangeProduct" prefHeight="220.0" prefWidth="239.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnChangeProduct" layoutX="46.0" layoutY="46.0" mnemonicParsing="false" text="Изменить" textFill="#393939" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textFieldNumOfProduct" layoutX="14.0" layoutY="28.0" promptText="Кол-во товара" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textFieldCostOfProduct" layoutY="49.0" promptText="Цена">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnDeleteProduct" layoutX="48.0" layoutY="103.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="140.0" text="Удалить " textFill="#393939" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableOfProducts" editable="true" layoutX="38.0" layoutY="20.0" prefHeight="400.0" prefWidth="868.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="productId" editable="false" prefWidth="62.40000915527344" sortable="false" text="id" />
+            <TableColumn fx:id="productName" editable="false" prefWidth="200.0" sortable="false" text="название" />
+            <TableColumn fx:id="productCountry" editable="false" prefWidth="196.0" sortable="false" text="страна производитель" />
+            <TableColumn fx:id="productCost" editable="false" prefWidth="133.5999755859375" sortType="DESCENDING" text="стоимость, $" />
+            <TableColumn fx:id="productNumInStock" editable="false" prefWidth="274.4000244140625" sortable="false" text="количество на скаде, шт." />
+         </columns>
+      </TableView>
+      <Button fx:id="btnCreateNewProduct" layoutX="200.0" layoutY="476.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="301.0" text="Добавить новый товар" textFill="#393939" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

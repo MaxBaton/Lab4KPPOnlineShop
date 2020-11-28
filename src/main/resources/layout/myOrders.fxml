@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableMyOrders" editable="true" layoutX="48.0" layoutY="30.0" prefHeight="400.0" prefWidth="873.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="orderId" prefWidth="75.0" text="№" />
+            <TableColumn fx:id="orderAllProducts" editable="false" prefWidth="279.199951171875" sortable="false" text="заказ" />
+            <TableColumn fx:id="orderCost" editable="false" prefWidth="111.9998779296875" sortType="DESCENDING" text="стоимость, $" />
+            <TableColumn fx:id="orderDate" editable="false" prefWidth="244.8001708984375" sortable="false" text="дата" />
+            <TableColumn fx:id="orderStatus" prefWidth="214.4000244140625" text="статус" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="anchorPaneOrderId" prefHeight="200.0" prefWidth="236.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Text fx:id="textIdOrder" strokeType="OUTSIDE" strokeWidth="0.0" text="id заказа" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnPayOrder" layoutX="21.0" layoutY="48.0" mnemonicParsing="false" text="Оплатить" textFill="#393939" AnchorPane.leftAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

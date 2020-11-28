@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="textFieldPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#0d0da2" layoutX="115.0" layoutY="58.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Авторизация" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="#090211" layoutX="28.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин" wrappingWidth="102.13671875">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textFieldLogin" layoutX="142.0" layoutY="80.0" prefHeight="40.0" prefWidth="252.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#090211" layoutX="28.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" wrappingWidth="102.13671875">
+         <font>
+            <Font name="System Italic" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnSignIn" layoutX="162.0" layoutY="187.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="183.0" text="Войти" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Button>
+      <Text fx:id="txtNotRegistered" layoutX="170.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Не зарегистрирован">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="textFieldPassword" layoutX="142.0" layoutY="136.0" prefHeight="40.0" prefWidth="252.0" />
+   </children>
+</AnchorPane>

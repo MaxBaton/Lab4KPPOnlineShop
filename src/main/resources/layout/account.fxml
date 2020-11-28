@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="txtAccountSum" fill="#790d0d" layoutX="37.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 $">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textFieldSum" focusTraversable="false" layoutX="396.0" layoutY="53.0" prefHeight="26.0" prefWidth="224.0" promptText="Введите сумму">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnTopUpAccount" layoutX="460.0" layoutY="89.0" mnemonicParsing="false" text="Пополнить">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text fx:id="textError" fill="#d71414" layoutX="378.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Уж слишком Вы зажрались, сударь!" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
