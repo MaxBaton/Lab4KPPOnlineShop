@@ -16,7 +16,7 @@ import java.util.logging.Level
 class AdminClientsController: Controller() {
     private val myLog = LogApp.getLogger()
 
-    fun getListClientForAdmin(): MutableList<ClientForAdmin> {
+    fun getListClientForAdmin(): MutableList<ClientForAdmin>? {
         val listOfClientForAdmin = mutableListOf<ClientForAdmin>()
 
         val listOfClient = getClientInfo()
@@ -65,7 +65,7 @@ class AdminClientsController: Controller() {
         return listOfClient
     }
 
-    fun changeClientStatus(clientId: Int, status: String) {
+    fun changeClientStatus(clientId: Int, status: String): Boolean {
         val updateStatus = "UPDATE ${ConstClient.CLIENT_TABLE} SET " +
                 "${ConstClient.CLIENT_STATUS} = ? WHERE ${ConstClient.CLIENT_ID} = $clientId"
 
@@ -75,9 +75,20 @@ class AdminClientsController: Controller() {
             preparedStatement.setString(1, status)
             preparedStatement.executeUpdate()
 
+            val clientAccountInfo = getClientInfo()
+            var isClientInLIst = false
+            clientAccountInfo.forEach {
+                if (it.id == clientId){
+                    isClientInLIst = true
+                    return@forEach
+                }
+            }
+            if (!isClientInLIst) return false
+
             ClientAccountController.client?.status = status
 
-            myLog.log(Level.INFO, "AdminClientsController: Статус клиента успешно изменен на $status")
+            myLog.log(Level.INFO, "AdminClientsController: Статус клиента успешно изменен на '$status'")
+            if (preparedStatement != null) return true
         }catch (e: SQLException) {
             myLog.log(Level.SEVERE, "AdminClientsController: SQLException", e)
         }catch (e: ClassNotFoundException) {
@@ -85,6 +96,7 @@ class AdminClientsController: Controller() {
         }catch (e: Exception) {
             myLog.log(Level.SEVERE, "AdminClientsController: Exception", e)
         }
+        return false
     }
 
     private fun getClientAccountInfo(listOfClient: List<Client>): List<Account> {

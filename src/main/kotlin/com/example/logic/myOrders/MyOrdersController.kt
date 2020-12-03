@@ -20,7 +20,7 @@ class MyOrdersController: Controller() {
         var idNumberChangedProduct: Map<Int, Int>? = null
     }
 
-    fun getListOfOrders(): List<Order> {
+    fun getListOfOrders(): List<Order>? {
         val listOfOrders = mutableListOf<Order>()
 
         val select = "SELECT * FROM ${ConstOrder.ORDER_TABLE} WHERE ${ConstOrder.ORDER_ID_CLIENT} = ${ClientAccountController.client!!.id}"

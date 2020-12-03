@@ -52,7 +52,7 @@ class LogInController: Controller() {
 
                 ClientAccountController.client = Client(id = data[0].toInt(),name = data[1], address = data[2], status = data[3],
                                                         login = data[4], password = data[5])
-                ClientAccountView().openWindow(modality = Modality.NONE)
+//                ClientAccountView().openWindow(modality = Modality.NONE)
 
                 myLog.log(Level.INFO, "LogInController: Успешный вход в аккаунт")
             }catch (e: SQLException) {

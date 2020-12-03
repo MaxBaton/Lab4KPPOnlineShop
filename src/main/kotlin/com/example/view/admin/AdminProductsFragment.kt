@@ -45,7 +45,7 @@ class AdminProductsFragment: Fragment() {
         anchorPaneChangeProduct.isVisible = false
         anchorPaneCreateNewProduct.isVisible = false
 
-        val listOfProducts = MakeOrderController().getListOfProducts()
+        val listOfProducts = MakeOrderController().getListOfProducts()!!
         displayListOfProducts(listOfProducts)
 
         tableOfProducts.setOnMouseClicked {

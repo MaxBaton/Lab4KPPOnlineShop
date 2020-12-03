@@ -38,7 +38,7 @@ class MyOrdersFragment: Fragment() {
     init {
         anchorPaneOrderId.isVisible = false
 
-        val listOfOrders = controller.getListOfOrders()
+        val listOfOrders = controller.getListOfOrders()!!
         displayOfOrders(listOfOrders)
 
         tableMyOrders.setOnMouseClicked {

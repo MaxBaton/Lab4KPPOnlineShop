@@ -37,7 +37,7 @@ class MakeOrderFragment: Fragment() {
     init {
         anchorPaneMakeOrder.isVisible = false
 
-        val listOfProducts = controller.getListOfProducts()
+        val listOfProducts = controller.getListOfProducts()!!
         displayListOfProducts(listOfProducts)
 
         tableOfProducts.setOnMouseClicked {
@@ -48,7 +48,7 @@ class MakeOrderFragment: Fragment() {
         btnMakeOrder.setOnMouseClicked {
             val index = tableOfProducts.selectionModel.selectedIndex
             val productName = productName.getCellData(index).toString()
-            val productId     = listOfProducts[index].id //productId.getCellData(index).toInt()
+            val productId     = listOfProducts[index].id
             var productCost   = productCost.getCellData(index).toInt()
 
             if (textFieldNumOfProduct.text.trim().isNotEmpty()) {

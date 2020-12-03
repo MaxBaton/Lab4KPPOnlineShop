@@ -76,7 +76,7 @@ class AccountController: Controller() {
         }
     }
 
-    fun loadAccount() {
+    fun loadAccount(): Boolean {
         try {
             val clientId = ClientAccountController.client!!.id
 
@@ -98,6 +98,7 @@ class AccountController: Controller() {
             account = Account(id = data[0].toInt(), amount = data[1].toInt(), client = ClientAccountController.client!!)
 
             myLog.log(Level.INFO, "AccountController: Текущий счет: ${account!!.amount}$")
+            if (resultSet != null) return true
         }catch (e: SQLException) {
             myLog.log(Level.SEVERE, "AccountController: SQLException", e)
         }catch (e: ClassNotFoundException) {
@@ -105,6 +106,7 @@ class AccountController: Controller() {
         }catch (e: Exception) {
             myLog.log(Level.SEVERE, "AccountController: Exception", e)
         }
+        return false
     }
 
     fun setAccountId() {

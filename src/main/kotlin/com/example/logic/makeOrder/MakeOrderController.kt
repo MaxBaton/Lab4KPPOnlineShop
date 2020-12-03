@@ -18,7 +18,7 @@ class MakeOrderController: Controller() {
         var listOfProduct: MutableList<Product>? = null
     }
 
-    fun getListOfProducts(): MutableList<Product> {
+    fun getListOfProducts(): MutableList<Product>? {
         val _listOfProducts = mutableListOf<Product>()
 
         val select = "SELECT * FROM ${ConstProduct.PRODUCT_TABLE}"

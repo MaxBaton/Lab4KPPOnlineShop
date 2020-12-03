@@ -10,7 +10,7 @@ class DatabaseHandler: Config() {
     fun getDbConnection(): Connection {
         val connectionString = "jdbc:mysql://$dbHost:$dbPort/$dbName?useUnicode=true&serverTimezone=UTC&useSSL=false"
 
-        Class.forName("com.mysql.jdbc.Driver")
+        Class.forName("com.mysql.cj.jdbc.Driver")
         val dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPassword)
 
         return dbConnection!!

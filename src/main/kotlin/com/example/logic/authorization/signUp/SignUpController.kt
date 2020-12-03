@@ -43,6 +43,7 @@ class SignUpController: Controller() {
             ClientAccountController.client = client
 
             myLog.log(Level.INFO,"SignUpController: Пользователь $client успешно зарешичтрирован")
+            if (preparedStatement != null) return true
         }catch (e: SQLException) {
             myLog.log(Level.SEVERE, "SignUpController: SQLException", e)
         }catch (e: ClassNotFoundException) {
@@ -51,7 +52,7 @@ class SignUpController: Controller() {
             myLog.log(Level.SEVERE, "SignUpController: Exception", e)
         }
 
-        return true
+        return false
     }
 
     private fun getLoginsFromClients(): List<String> {

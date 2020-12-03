@@ -1,88 +1,11 @@
-<html><head><title>AppLog</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body><table border=1><tr bgcolor=CYAN><td>date</td><td>level</td><td>class</td><td>method</td><td>message</td><td>thrown message</td><td>stacktrace</td></tr><tr bgColor=Tomato><td>
-Sat Nov 28 13:04:09 MSK 2020</td><td>SEVERE</td><td>com.example.logic.authorization.logIn.LogInController</td><td>signIn</td><td>SignIn: IndexOutOfBoundsException</td><td>Index: 0, Size: 0</td><td>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
-	at java.util.ArrayList.get(ArrayList.java:433)
-	at com.example.logic.authorization.logIn.LogInController.signIn(LogInController.kt:53)
-	at com.example.view.client.LogInView$1.handle(LogInView.kt:34)
-	at com.example.view.client.LogInView$1.handle(LogInView.kt:15)
-	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
-	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3470)
-	at javafx.scene.Scene$ClickGenerator.access$8100(Scene.java:3398)
-	at javafx.scene.Scene$MouseHandler.process(Scene.java:3766)
-	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
-	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
-	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:394)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$353(GlassViewEventHandler.java:432)
-	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:431)
-	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
-	at com.sun.glass.ui.View.notifyMouse(View.java:937)
-	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
-	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
-	at java.lang.Thread.run(Thread.java:748)
-</td></tr>
+<html><head><title>AppLog</title><meta http-equiv="content-type" content="text/html; charset=utf-8"></head><body><table border=1><tr bgcolor=CYAN><td>date</td><td>level</td><td>class</td><td>method</td><td>message</td><td>thrown message</td><td>stacktrace</td></tr><tr bgColor=WHITE><td>
+Thu Dec 03 19:37:47 MSK 2020</td><td>INFO</td><td>com.example.logic.authorization.logIn.LogInController</td><td>signIn</td><td>LogInController: Успешный вход в аккаунт</td><td></td><td>null</td></tr>
 <tr bgColor=WHITE><td>
-Sat Nov 28 13:04:12 MSK 2020</td><td>INFO</td><td>com.example.logic.authorization.logIn.LogInController</td><td>signIn</td><td>SignIn: Успешный вход в аккаунт</td><td></td><td>null</td></tr>
+Thu Dec 03 19:37:48 MSK 2020</td><td>INFO</td><td>com.example.logic.account.AccountController</td><td>loadAccount</td><td>AccountController: Текущий счет: 1682$</td><td></td><td>null</td></tr>
 <tr bgColor=WHITE><td>
-Sat Nov 28 13:04:14 MSK 2020</td><td>INFO</td><td>com.example.logic.account.AccountController</td><td>loadAccount</td><td>Account: Текущий счет: 673$</td><td></td><td>null</td></tr>
+Thu Dec 03 19:37:50 MSK 2020</td><td>INFO</td><td>com.example.logic.makeOrder.MakeOrderController</td><td>getListOfProducts</td><td>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=193, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</td><td></td><td>null</td></tr>
 <tr bgColor=WHITE><td>
-Sat Nov 28 13:04:16 MSK 2020</td><td>INFO</td><td>com.example.logic.myOrders.MyOrdersController</td><td>getListOfOrders</td><td>MyOrdersController: Получить список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
-Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
-Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
-, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
-Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
-Телефон - 5 	160$ 
-, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
-, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
-, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
-Велосипед - 1 	130$ 
-, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
-, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
-, client=null, status=Оплачен)]</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:19 MSK 2020</td><td>INFO</td><td>com.example.logic.makeOrder.MakeOrderController</td><td>getListOfProducts</td><td>MakeOrderController: Получить список продуктов: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=247, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=194, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=33, country=Китай, numberInStock=78, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:24 MSK 2020</td><td>INFO</td><td>com.example.logic.makeOrder.MakeOrderController</td><td>updateInDatabase</td><td>MakeOrderController: Обновить кол-во продутов: Стало 76 в продукте с id=3</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:24 MSK 2020</td><td>INFO</td><td>com.example.logic.myOrders.MyOrdersController</td><td>createOrderInDatabase</td><td>MyOrdersController: Подтвердить заказ: Заказ Телефон - 2 	66$ 
- подтвержден</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:25 MSK 2020</td><td>INFO</td><td>com.example.logic.myOrders.MyOrdersController</td><td>getListOfOrders</td><td>MyOrdersController: Получить список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
+Thu Dec 03 19:37:55 MSK 2020</td><td>INFO</td><td>com.example.logic.myOrders.MyOrdersController</td><td>getListOfOrders</td><td>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
 Кроссовки - 1 	14$ 
 , client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
 , client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
@@ -115,17 +38,7 @@ Sat Nov 28 13:04:25 MSK 2020</td><td>INFO</td><td>com.example.logic.myOrders.MyO
 , client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
 , client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
 , client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
-, client=null, status=Заказан)]</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:29 MSK 2020</td><td>INFO</td><td>com.example.logic.account.AccountController</td><td>setNewAmount</td><td>Account: Пополнение счета. Новый счет: 607$</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:29 MSK 2020</td><td>INFO</td><td>com.example.logic.myOrders.MyOrdersController</td><td>setNewProductStatus</td><td>MyOrdersController: Оплатить заказ: Заказ с id=52 оплачен</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:45 MSK 2020</td><td>INFO</td><td>com.example.logic.makeOrder.MakeOrderController</td><td>getListOfProducts</td><td>MakeOrderController: Получить список продуктов: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=247, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=194, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=33, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:52 MSK 2020</td><td>INFO</td><td>com.example.logic.admin.adminProducts.AdminProductsController</td><td>changeCostOfProduct</td><td>AdminProductsController: Изменить стоимость продукта: Стоимость продукта с id=3 успешно изменена на 34</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:55 MSK 2020</td><td>INFO</td><td>com.example.logic.admin.adminClients.AdminClientsController</td><td>getClientInfo</td><td>AdminClientsController: Получить информацию о клиентах: Получили список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</td><td></td><td>null</td></tr>
-<tr bgColor=WHITE><td>
-Sat Nov 28 13:04:55 MSK 2020</td><td>INFO</td><td>com.example.logic.admin.adminClients.AdminClientsController</td><td>getClientAccountInfo</td><td>AdminClientsController: Получить информацию о счетах клиента: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=607, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</td><td></td><td>null</td></tr>
+, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен)]</td><td></td><td>null</td></tr>
 </table></body></html>

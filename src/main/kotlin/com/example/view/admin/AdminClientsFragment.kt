@@ -31,7 +31,7 @@ class AdminClientsFragment: Fragment() {
     init {
         anchorPaneAddClientToBackList.isVisible = false
 
-        val listOfClientForAdmin = controller.getListClientForAdmin()
+        val listOfClientForAdmin = controller.getListClientForAdmin()!!
         displayListOfClientForAdmin(listOfClientForAdmin)
 
         tableOfClients.setOnMouseClicked {

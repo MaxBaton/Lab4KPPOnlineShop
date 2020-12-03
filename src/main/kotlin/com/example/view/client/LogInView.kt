@@ -34,6 +34,7 @@ class LogInView : View("online_shop") {
                 controller.signIn(login = login, password = password)
                 txtFieldLogin.clear()
                 txtFieldPassword.clear()
+                ClientAccountView().openWindow(modality = Modality.NONE)
             }
         }
         txtNotRegister.setOnMouseClicked {

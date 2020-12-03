@@ -2,301 +2,48 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-11-28T13:04:09</date>
-  <millis>1606557849350</millis>
+  <date>2020-12-03T19:37:47</date>
+  <millis>1607013467081</millis>
   <sequence>1</sequence>
-  <logger>javaClass</logger>
-  <level>SEVERE</level>
-  <class>com.example.logic.authorization.logIn.LogInController</class>
-  <method>signIn</method>
-  <thread>13</thread>
-  <message>SignIn: IndexOutOfBoundsException</message>
-  <exception>
-    <message>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0</message>
-    <frame>
-      <class>java.util.ArrayList</class>
-      <method>rangeCheck</method>
-      <line>657</line>
-    </frame>
-    <frame>
-      <class>java.util.ArrayList</class>
-      <method>get</method>
-      <line>433</line>
-    </frame>
-    <frame>
-      <class>com.example.logic.authorization.logIn.LogInController</class>
-      <method>signIn</method>
-      <line>53</line>
-    </frame>
-    <frame>
-      <class>com.example.view.client.LogInView$1</class>
-      <method>handle</method>
-      <line>34</line>
-    </frame>
-    <frame>
-      <class>com.example.view.client.LogInView$1</class>
-      <method>handle</method>
-      <line>15</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.CompositeEventHandler</class>
-      <method>dispatchBubblingEvent</method>
-      <line>86</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventHandlerManager</class>
-      <method>dispatchBubblingEvent</method>
-      <line>238</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventHandlerManager</class>
-      <method>dispatchBubblingEvent</method>
-      <line>191</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.CompositeEventDispatcher</class>
-      <method>dispatchBubblingEvent</method>
-      <line>59</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.BasicEventDispatcher</class>
-      <method>dispatchEvent</method>
-      <line>58</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventDispatchChainImpl</class>
-      <method>dispatchEvent</method>
-      <line>114</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.BasicEventDispatcher</class>
-      <method>dispatchEvent</method>
-      <line>56</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventDispatchChainImpl</class>
-      <method>dispatchEvent</method>
-      <line>114</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.BasicEventDispatcher</class>
-      <method>dispatchEvent</method>
-      <line>56</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventDispatchChainImpl</class>
-      <method>dispatchEvent</method>
-      <line>114</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventUtil</class>
-      <method>fireEventImpl</method>
-      <line>74</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.event.EventUtil</class>
-      <method>fireEvent</method>
-      <line>54</line>
-    </frame>
-    <frame>
-      <class>javafx.event.Event</class>
-      <method>fireEvent</method>
-      <line>198</line>
-    </frame>
-    <frame>
-      <class>javafx.scene.Scene$ClickGenerator</class>
-      <method>postProcess</method>
-      <line>3470</line>
-    </frame>
-    <frame>
-      <class>javafx.scene.Scene$ClickGenerator</class>
-      <method>access$8100</method>
-      <line>3398</line>
-    </frame>
-    <frame>
-      <class>javafx.scene.Scene$MouseHandler</class>
-      <method>process</method>
-      <line>3766</line>
-    </frame>
-    <frame>
-      <class>javafx.scene.Scene$MouseHandler</class>
-      <method>access$1500</method>
-      <line>3485</line>
-    </frame>
-    <frame>
-      <class>javafx.scene.Scene</class>
-      <method>impl_processMouseEvent</method>
-      <line>1762</line>
-    </frame>
-    <frame>
-      <class>javafx.scene.Scene$ScenePeerListener</class>
-      <method>mouseEvent</method>
-      <line>2494</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification</class>
-      <method>run</method>
-      <line>394</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification</class>
-      <method>run</method>
-      <line>295</line>
-    </frame>
-    <frame>
-      <class>java.security.AccessController</class>
-      <method>doPrivileged</method>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.tk.quantum.GlassViewEventHandler</class>
-      <method>lambda$handleMouseEvent$353</method>
-      <line>432</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.tk.quantum.QuantumToolkit</class>
-      <method>runWithoutRenderLock</method>
-      <line>389</line>
-    </frame>
-    <frame>
-      <class>com.sun.javafx.tk.quantum.GlassViewEventHandler</class>
-      <method>handleMouseEvent</method>
-      <line>431</line>
-    </frame>
-    <frame>
-      <class>com.sun.glass.ui.View</class>
-      <method>handleMouseEvent</method>
-      <line>555</line>
-    </frame>
-    <frame>
-      <class>com.sun.glass.ui.View</class>
-      <method>notifyMouse</method>
-      <line>937</line>
-    </frame>
-    <frame>
-      <class>com.sun.glass.ui.win.WinApplication</class>
-      <method>_runLoop</method>
-    </frame>
-    <frame>
-      <class>com.sun.glass.ui.win.WinApplication</class>
-      <method>lambda$null$147</method>
-      <line>177</line>
-    </frame>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>run</method>
-      <line>748</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2020-11-28T13:04:12</date>
-  <millis>1606557852528</millis>
-  <sequence>3</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.authorization.logIn.LogInController</class>
   <method>signIn</method>
   <thread>13</thread>
-  <message>SignIn: Успешный вход в аккаунт</message>
+  <message>LogInController: Успешный вход в аккаунт</message>
 </record>
 <record>
-  <date>2020-11-28T13:04:14</date>
-  <millis>1606557854062</millis>
-  <sequence>5</sequence>
+  <date>2020-12-03T19:37:48</date>
+  <millis>1607013468107</millis>
+  <sequence>4</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.account.AccountController</class>
   <method>loadAccount</method>
   <thread>13</thread>
-  <message>Account: Текущий счет: 673$</message>
+  <message>AccountController: Текущий счет: 1682$</message>
 </record>
 <record>
-  <date>2020-11-28T13:04:16</date>
-  <millis>1606557856594</millis>
-  <sequence>7</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.myOrders.MyOrdersController</class>
-  <method>getListOfOrders</method>
-  <thread>13</thread>
-  <message>MyOrdersController: Получить список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
-Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
-Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
-, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
-Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
-Телефон - 5 	160$ 
-, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
-, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
-, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
-Велосипед - 1 	130$ 
-, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
-, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
-, client=null, status=Оплачен)]</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:19</date>
-  <millis>1606557859827</millis>
-  <sequence>9</sequence>
+  <date>2020-12-03T19:37:50</date>
+  <millis>1607013470063</millis>
+  <sequence>6</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.makeOrder.MakeOrderController</class>
   <method>getListOfProducts</method>
   <thread>13</thread>
-  <message>MakeOrderController: Получить список продуктов: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=247, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=194, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=33, country=Китай, numberInStock=78, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=193, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
 </record>
 <record>
-  <date>2020-11-28T13:04:24</date>
-  <millis>1606557864478</millis>
-  <sequence>10</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>updateInDatabase</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Обновить кол-во продутов: Стало 76 в продукте с id=3</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:24</date>
-  <millis>1606557864950</millis>
-  <sequence>11</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.myOrders.MyOrdersController</class>
-  <method>createOrderInDatabase</method>
-  <thread>13</thread>
-  <message>MyOrdersController: Подтвердить заказ: Заказ Телефон - 2 	66$ 
- подтвержден</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:25</date>
-  <millis>1606557865936</millis>
-  <sequence>13</sequence>
+  <date>2020-12-03T19:37:55</date>
+  <millis>1607013475927</millis>
+  <sequence>8</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.myOrders.MyOrdersController</class>
   <method>getListOfOrders</method>
   <thread>13</thread>
-  <message>MyOrdersController: Получить список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
+  <message>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
 Кроссовки - 1 	14$ 
 , client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
 , client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
@@ -329,72 +76,8 @@
 , client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
 , client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
 , client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
-, client=null, status=Заказан)]</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:29</date>
-  <millis>1606557869396</millis>
-  <sequence>14</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.account.AccountController</class>
-  <method>setNewAmount</method>
-  <thread>13</thread>
-  <message>Account: Пополнение счета. Новый счет: 607$</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:29</date>
-  <millis>1606557869461</millis>
-  <sequence>15</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.myOrders.MyOrdersController</class>
-  <method>setNewProductStatus</method>
-  <thread>13</thread>
-  <message>MyOrdersController: Оплатить заказ: Заказ с id=52 оплачен</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:45</date>
-  <millis>1606557885405</millis>
-  <sequence>19</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Получить список продуктов: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=247, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=194, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=33, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:52</date>
-  <millis>1606557892773</millis>
-  <sequence>20</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
-  <method>changeCostOfProduct</method>
-  <thread>13</thread>
-  <message>AdminProductsController: Изменить стоимость продукта: Стоимость продукта с id=3 успешно изменена на 34</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:55</date>
-  <millis>1606557895210</millis>
-  <sequence>22</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminClients.AdminClientsController</class>
-  <method>getClientInfo</method>
-  <thread>13</thread>
-  <message>AdminClientsController: Получить информацию о клиентах: Получили список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:55</date>
-  <millis>1606557895219</millis>
-  <sequence>23</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminClients.AdminClientsController</class>
-  <method>getClientAccountInfo</method>
-  <thread>13</thread>
-  <message>AdminClientsController: Получить информацию о счетах клиента: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=607, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
+, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен)]</message>
 </record>
 </log>

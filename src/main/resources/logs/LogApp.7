@@ -2,47 +2,80 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-11-28T13:04:45</date>
-  <millis>1606557885405</millis>
-  <sequence>19</sequence>
+  <date>2020-12-02T19:22:20</date>
+  <millis>1606926140438</millis>
+  <sequence>23</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.account.AccountController</class>
+  <method>loadAccount</method>
+  <thread>13</thread>
+  <message>AccountController: Текущий счет: 1696$</message>
+</record>
+<record>
+  <date>2020-12-02T19:22:20</date>
+  <millis>1606926140569</millis>
+  <sequence>24</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.account.AccountController</class>
+  <method>setNewAmount</method>
+  <thread>13</thread>
+  <message>AccountController: Новый счет: 1682$</message>
+</record>
+<record>
+  <date>2020-12-02T19:22:20</date>
+  <millis>1606926140758</millis>
+  <sequence>25</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>setNewProductStatus</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Заказ с id=54 оплачен</message>
+</record>
+<record>
+  <date>2020-12-02T19:22:26</date>
+  <millis>1606926146424</millis>
+  <sequence>28</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.makeOrder.MakeOrderController</class>
   <method>getListOfProducts</method>
   <thread>13</thread>
-  <message>MakeOrderController: Получить список продуктов: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=247, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=194, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=33, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=246, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=193, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
 </record>
 <record>
-  <date>2020-11-28T13:04:52</date>
-  <millis>1606557892773</millis>
-  <sequence>20</sequence>
+  <date>2020-12-02T19:22:35</date>
+  <millis>1606926155675</millis>
+  <sequence>30</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=22, country=Германия, numberInStock=246, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=193, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-02T19:22:44</date>
+  <millis>1606926164421</millis>
+  <sequence>31</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
   <method>changeCostOfProduct</method>
   <thread>13</thread>
-  <message>AdminProductsController: Изменить стоимость продукта: Стоимость продукта с id=3 успешно изменена на 34</message>
+  <message>AdminProductsController: Стоимость продукта с id=1 успешно изменена на 30</message>
 </record>
 <record>
-  <date>2020-11-28T13:04:55</date>
-  <millis>1606557895210</millis>
-  <sequence>22</sequence>
+  <date>2020-12-02T19:22:47</date>
+  <millis>1606926167205</millis>
+  <sequence>33</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
-  <class>com.example.logic.admin.adminClients.AdminClientsController</class>
-  <method>getClientInfo</method>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
   <thread>13</thread>
-  <message>AdminClientsController: Получить информацию о клиентах: Получили список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
-</record>
-<record>
-  <date>2020-11-28T13:04:55</date>
-  <millis>1606557895219</millis>
-  <sequence>23</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminClients.AdminClientsController</class>
-  <method>getClientAccountInfo</method>
-  <thread>13</thread>
-  <message>AdminClientsController: Получить информацию о счетах клиента: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=607, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=246, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=193, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=76, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
 </record>
 </log>

@@ -29,9 +29,8 @@ class ClientAccountController : Controller() {
         txtClientStatus.text = "$name - $status"
    }
 
-    fun setClientId() {
+    fun setClientId(): Boolean {
         try {
-            var resultSet: ResultSet? = null
             val _client = client
             val select = "SELECT * FROM ${ConstClient.CLIENT_TABLE} WHERE ${ConstClient.CLIENT_LOGIN} = ? " +
                     "AND ${ConstClient.CLIENT_PASSWORD} = ?"
@@ -39,7 +38,7 @@ class ClientAccountController : Controller() {
             val preparedStatement2 = DatabaseHandler().getDbConnection().prepareStatement(select)
             preparedStatement2.setString(1, _client!!.login)
             preparedStatement2.setString(2, _client.password)
-            resultSet = preparedStatement2.executeQuery()
+            val resultSet = preparedStatement2.executeQuery()
             val data = mutableListOf<String>()
 
             while (resultSet.next()) {
@@ -57,6 +56,7 @@ class ClientAccountController : Controller() {
             AccountController.account = Account(client = _client!!)
 
             myLog.log(Level.INFO, "ClientAccountController: Установка id=$id клиента прошла успешно")
+            if (resultSet != null) return true
         }catch (e: SQLException) {
             myLog.log(Level.SEVERE, "ClientAccountController: SQLException", e)
         }catch (e: ClassNotFoundException) {
@@ -64,5 +64,7 @@ class ClientAccountController : Controller() {
         }catch (e: Exception) {
             myLog.log(Level.SEVERE, "ClientAccountController: Exception", e)
         }
+
+        return false
     }
 }
