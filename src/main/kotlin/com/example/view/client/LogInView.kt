@@ -31,10 +31,10 @@ class LogInView : View("online_shop") {
                 txtFieldLogin.clear()
                 txtFieldPassword.clear()
             }else {
-                controller.signIn(login = login, password = password)
+                val success = controller.signIn(login = login, password = password)
                 txtFieldLogin.clear()
                 txtFieldPassword.clear()
-                ClientAccountView().openWindow(modality = Modality.NONE)
+                if (success) ClientAccountView().openWindow(modality = Modality.NONE)
             }
         }
         txtNotRegister.setOnMouseClicked {

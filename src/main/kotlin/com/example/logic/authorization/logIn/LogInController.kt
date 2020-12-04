@@ -22,7 +22,7 @@ import java.util.logging.Level
 class LogInController: Controller() {
     private val myLog = LogApp.getLogger()
 
-    fun signIn(login: String, password: String): ResultSet? {
+    fun signIn(login: String, password: String): Boolean {
         var resultSet: ResultSet? = null
 
         if (login.isEmpty() && password.isEmpty()) {
@@ -55,6 +55,7 @@ class LogInController: Controller() {
 //                ClientAccountView().openWindow(modality = Modality.NONE)
 
                 myLog.log(Level.INFO, "LogInController: Успешный вход в аккаунт")
+                if (resultSet != null) return true
             }catch (e: SQLException) {
                 myLog.log(Level.SEVERE, "LogInController: SQLException ", e)
             }catch (e: ClassNotFoundException) {
@@ -66,7 +67,7 @@ class LogInController: Controller() {
             }
         }
 
-        return resultSet
+        return false
     }
 
     fun notRegister() {
