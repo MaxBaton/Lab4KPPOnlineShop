@@ -60,15 +60,11 @@ class MyOrdersFragment: Fragment() {
                 val orderStatusString = orderStatus.getCellData(index).toString()
 
                 if (orderStatusString != OrderStatus.PAID.statusName) {
-                    val myAmount = controller.payOrder(totalCost, orderId)
-//                    if (myAmount > 0) {
+                    controller.payOrder(totalCost, orderId)
                         listOfOrders[index].status = OrderStatus.PAID.statusName
                         changeStatusOrderInTable(listOfOrders, index)
 
                         anchorPaneOrderId.isVisible = false
-//                    }else {
-//                        textIdOrder.text = "Бабок нет!!!"
-//                    }
                 }else {
                     textIdOrder.text = "Товар уже оплачен"
                 }
