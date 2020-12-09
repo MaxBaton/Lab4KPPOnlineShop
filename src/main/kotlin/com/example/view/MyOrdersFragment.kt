@@ -56,7 +56,7 @@ class MyOrdersFragment: Fragment() {
             }else {
                 val index = tableMyOrders.selectionModel.selectedIndex
                 val totalCost = orderCost.getCellData(index).toInt()
-                val orderId = listOfOrders[index].id//orderId.getCellData(index).toInt()
+                val orderId = listOfOrders[index].id
                 val orderStatusString = orderStatus.getCellData(index).toString()
 
                 if (orderStatusString != OrderStatus.PAID.statusName) {

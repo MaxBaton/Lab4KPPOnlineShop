@@ -12,8 +12,7 @@ internal class MyOrdersControllerTest {
     fun getListOfOrders() {
         LogInController().signIn("1", "1111")
 
-        val unexpected = null
         val actual = myOrdersController.getListOfOrders()
-        assertNotEquals(unexpected, actual)
+        assertNotNull(actual)
     }
 }
