@@ -25,12 +25,16 @@ class HtmlFormatter: Formatter() {
          * предупреждения - серым,
          * информационные сообщения - белым.
          */
-        if (level === Level.SEVERE) {
-            result.append("<tr bgColor=Tomato><td>")
-        } else if (level === Level.WARNING) {
-            result.append("<tr bgColor=GRAY><td>")
-        } else {
-            result.append("<tr bgColor=WHITE><td>")
+        when {
+            level === Level.SEVERE -> {
+                result.append("<tr bgColor=Tomato><td>")
+            }
+            level === Level.WARNING -> {
+                result.append("<tr bgColor=GRAY><td>")
+            }
+            else -> {
+                result.append("<tr bgColor=WHITE><td>")
+            }
         }
         result.append("\n")
         result.append(d)

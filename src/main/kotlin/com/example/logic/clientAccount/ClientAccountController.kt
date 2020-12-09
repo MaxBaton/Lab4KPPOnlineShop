@@ -23,10 +23,11 @@ class ClientAccountController : Controller() {
         var client: Client? = null
     }
 
-    fun setStatus(txtClientStatus: Text) {
+    fun setStatus(txtClientStatus: Text): Boolean {
         val name: String? = client?.name ?: "EMPTY"
         val status: String? = client?.status ?: "EMPTY"
         txtClientStatus.text = "$name - $status"
+        return (name?.isNotEmpty()!! && status?.isNotEmpty()!!)
    }
 
     fun setClientId(): Boolean {

@@ -26,7 +26,7 @@ class ClientAccountView(isFromRegisterView: Boolean = false): View("Аккаун
             AccountFragment.isFromRegisterView = isFromRegisterView
         }
 
-        controller.setStatus(txtClientStatus)
+        if (!controller.setStatus(txtClientStatus)) this.close()
 
         btnAccount.setOnMouseClicked {
             AccountFragment.numClick++

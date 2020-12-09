@@ -42,7 +42,6 @@ class LogInController: Controller() {
                 val data = mutableListOf<String>()
 
                 while (resultSet.next()) {
-                    //val row: ObservableList<*> = FXCollections.observableArrayList<Any>()
                     val columnCount = resultSet.metaData.columnCount
                     for (i in 1..columnCount) {
                         val row = resultSet.getString(i)
@@ -52,7 +51,6 @@ class LogInController: Controller() {
 
                 ClientAccountController.client = Client(id = data[0].toInt(),name = data[1], address = data[2], status = data[3],
                                                         login = data[4], password = data[5])
-//                ClientAccountView().openWindow(modality = Modality.NONE)
 
                 myLog.log(Level.INFO, "LogInController: Успешный вход в аккаунт")
                 if (resultSet != null) return true

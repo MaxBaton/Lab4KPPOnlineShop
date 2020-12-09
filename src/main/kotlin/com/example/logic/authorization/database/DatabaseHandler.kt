@@ -4,7 +4,6 @@ import java.sql.Connection
 import java.sql.DriverManager
 
 class DatabaseHandler: Config() {
-    //var dbConnection: Connection? = null
 
     @JvmName("getDbConnection1")
     fun getDbConnection(): Connection {
