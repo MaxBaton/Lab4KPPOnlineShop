@@ -30,7 +30,6 @@ class LogInController: Controller() {
         }
 
         if (login.isNotEmpty() && password.isNotEmpty()) {
-
             val select = "SELECT * FROM ${ConstClient.CLIENT_TABLE} WHERE ${ConstClient.CLIENT_LOGIN} " +
                     "= ? AND ${ConstClient.CLIENT_PASSWORD} = ?"
 

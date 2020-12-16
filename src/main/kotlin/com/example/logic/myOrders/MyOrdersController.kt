@@ -20,10 +20,11 @@ class MyOrdersController: Controller() {
         var idNumberChangedProduct: Map<Int, Int>? = null
     }
 
-    fun getListOfOrders(): List<Order>? {
+    fun getListOfOrders(): List<Order> {
         val listOfOrders = mutableListOf<Order>()
 
-        val select = "SELECT * FROM ${ConstOrder.ORDER_TABLE} WHERE ${ConstOrder.ORDER_ID_CLIENT} = ${ClientAccountController.client!!.id}"
+        val select = "SELECT * FROM ${ConstOrder.ORDER_TABLE} WHERE ${ConstOrder.ORDER_ID_CLIENT} " +
+                        "= ${ClientAccountController.client!!.id}"
 
         try {
             val preparedStatement = DatabaseHandler().getDbConnection().prepareStatement(select)
@@ -81,7 +82,7 @@ class MyOrdersController: Controller() {
 
     fun payOrder(totalCost: Int, orderId: Int): Int {
         val myAmount = setNewAmount(totalCost)
-        /*if (myAmount > 0)*/ setNewProductStatus(orderId)
+        setNewProductStatus(orderId)
         return myAmount
     }
 
@@ -109,9 +110,8 @@ class MyOrdersController: Controller() {
             AccountFragment.numClick++
             AccountFragment()
         }
-        //AccountController.account?.amount ?: AccountFragment()
         val myAmount = AccountController.account!!.amount - totalCost
-        /*if (myAmount > 0)*/ AccountController().setNewAmount(amount = myAmount)
+        AccountController().setNewAmount(amount = myAmount)
         return myAmount
     }
 }

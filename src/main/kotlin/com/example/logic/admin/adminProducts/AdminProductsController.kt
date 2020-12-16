@@ -62,7 +62,7 @@ class AdminProductsController: Controller() {
         return false
     }
 
-    fun createNewProduct(product: Product) {
+    fun createNewProduct(product: Product): Boolean {
         val insertClient = "INSERT INTO ${ConstProduct.PRODUCT_TABLE}(${ConstProduct.PRODUCT_NAME}," +
                 "${ConstProduct.PRODUCT_COST},${ConstProduct.PRODUCT_COUNTRY},${ConstProduct.PRODUCT_NUMBER_IN_STOCK})" +
                 "VALUES(?,?,?,?)"
@@ -77,6 +77,7 @@ class AdminProductsController: Controller() {
             preparedStatement.executeUpdate()
 
             myLog.log(Level.INFO, "AdminProductsController: Продукт $product успешно создан")
+            if (preparedStatement != null) return true
         }catch (e: SQLException) {
             myLog.log(Level.SEVERE, "AdminProductsController: SQLException", e)
         }catch (e: ClassNotFoundException) {
@@ -84,6 +85,7 @@ class AdminProductsController: Controller() {
         }catch (e: Exception) {
             myLog.log(Level.SEVERE, "AdminProductsController: Exception", e)
         }
+        return false
     }
 
     fun deleteProduct(productId: Int): Boolean {

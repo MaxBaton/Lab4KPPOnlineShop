@@ -5,8 +5,6 @@ import com.example.logic.authorization.tables.Order
 import com.example.logic.authorization.tables.OrderStatus
 import com.example.logic.clientAccount.ClientAccountController
 import com.example.logic.myOrders.MyOrdersController
-import com.example.view.client.ClientAccountView
-import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import javafx.scene.control.Button
 import javafx.scene.control.TableColumn
@@ -38,7 +36,7 @@ class MyOrdersFragment: Fragment() {
     init {
         anchorPaneOrderId.isVisible = false
 
-        val listOfOrders = controller.getListOfOrders()!!
+        val listOfOrders = controller.getListOfOrders()
         displayOfOrders(listOfOrders)
 
         tableMyOrders.setOnMouseClicked {

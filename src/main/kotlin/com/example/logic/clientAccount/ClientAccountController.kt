@@ -24,10 +24,10 @@ class ClientAccountController : Controller() {
     }
 
     fun setStatus(txtClientStatus: Text): Boolean {
-        val name: String? = client?.name ?: "EMPTY"
-        val status: String? = client?.status ?: "EMPTY"
+        val name: String = client?.name ?: "EMPTY"
+        val status: String = client?.status ?: "EMPTY"
         txtClientStatus.text = "$name - $status"
-        return (name?.isNotEmpty()!! && status?.isNotEmpty()!!)
+        return (name.isNotEmpty() && status.isNotEmpty())
    }
 
     fun setClientId(): Boolean {
@@ -43,8 +43,7 @@ class ClientAccountController : Controller() {
             val data = mutableListOf<String>()
 
             while (resultSet.next()) {
-                //val row: ObservableList<*> = FXCollections.observableArrayList<Any>()
-                val columnCount = resultSet.metaData.columnCount
+                resultSet.metaData.columnCount
                 for (i in 1..1) {
                     val row = resultSet.getString(i)
                     data.add(row)

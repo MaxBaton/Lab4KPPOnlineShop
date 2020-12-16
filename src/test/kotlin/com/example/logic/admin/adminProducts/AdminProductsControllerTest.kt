@@ -1,5 +1,6 @@
 package com.example.logic.admin.adminProducts
 
+import com.example.logic.authorization.tables.Product
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
@@ -28,8 +29,17 @@ internal class AdminProductsControllerTest {
     }
 
     @Test
+    fun createNewProduct() {
+        val product = Product(name = "s", country = "s", cost = 23, numberInStock = 33)
+
+        val expected = true
+        val actual = adminProductsController.createNewProduct(product)
+        assertEquals(expected, actual)
+    }
+
+    @Test
     fun deleteProduct() {
-        val productId = 1000
+        val productId = 124
 
         val expected = true
         val actual = adminProductsController.deleteProduct(productId = productId)

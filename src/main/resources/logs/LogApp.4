@@ -2,9 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-12-09T12:59:38</date>
-  <millis>1607507978287</millis>
-  <sequence>9</sequence>
+  <date>2020-12-10T11:44:25</date>
+  <millis>1607589865834</millis>
+  <sequence>8</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.myOrders.MyOrdersController</class>
@@ -48,12 +48,306 @@
 , client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
 , client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
 , client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=34, id=58, date=2020-12-10 11:44:24.881, totalCost=34, allProducts=Телефон - 1 	34$ 
 , client=null, status=Заказан)]</message>
 </record>
 <record>
-  <date>2020-12-09T12:59:45</date>
-  <millis>1607507985762</millis>
+  <date>2020-12-10T11:44:31</date>
+  <millis>1607589871618</millis>
+  <sequence>10</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=73, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=15, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:41</date>
+  <millis>1607589881379</millis>
   <sequence>11</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>updateInDatabase</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Стало 71 в продукте с id=3</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:41</date>
+  <millis>1607589881490</millis>
+  <sequence>12</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>updateInDatabase</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Стало 14 в продукте с id=6</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:41</date>
+  <millis>1607589881657</millis>
+  <sequence>13</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>createOrderInDatabase</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Заказ Телефон - 2 	68$ 
+Скутер - 1 	400$ 
+ подтвержден</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:42</date>
+  <millis>1607589882585</millis>
+  <sequence>15</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>getListOfOrders</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
+Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
+Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
+, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
+Телефон - 4 	128$ 
+, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
+, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
+Телефон - 5 	160$ 
+, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
+, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
+, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
+Велосипед - 1 	130$ 
+, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
+, client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
+, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProdu</log>
+та - 1 	22$ 
+, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=34, id=58, date=2020-12-10 11:44:24.881, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Заказан), Order(number=35, id=59, date=2020-12-10 11:44:41.495, totalCost=468, allProducts=Телефон - 2 	68$ 
+Скутер - 1 	400$ 
+, client=null, status=Заказан)]</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:49</date>
+  <millis>1607589889895</millis>
+  <sequence>17</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.account.AccountController</class>
+  <method>loadAccount</method>
+  <thread>13</thread>
+  <message>AccountController: Текущий счет: 1591$</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:52</date>
+  <millis>1607589892844</millis>
+  <sequence>19</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>getListOfOrders</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
+Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
+Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
+, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
+Телефон - 4 	128$ 
+, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
+, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
+Телефон - 5 	160$ 
+, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
+, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
+, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
+Велосипед - 1 	130$ 
+, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
+, client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
+, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=34, id=58, date=2020-12-10 11:44:24.881, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Заказан), Order(number=35, id=59, date=2020-12-10 11:44:41.495, totalCost=468, allProducts=Телефон - 2 	68$ 
+Скутер - 1 	400$ 
+, client=null, status=Заказан)]</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:55</date>
+  <millis>1607589895902</millis>
+  <sequence>20</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.account.AccountController</class>
+  <method>setNewAmount</method>
+  <thread>13</thread>
+  <message>AccountController: Новый счет: 1123$</message>
+</record>
+<record>
+  <date>2020-12-10T11:44:55</date>
+  <millis>1607589895980</millis>
+  <sequence>21</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>setNewProductStatus</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Заказ с id=59 оплачен</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:07</date>
+  <millis>1607589907664</millis>
+  <sequence>24</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=14, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:11</date>
+  <millis>1607589911502</millis>
+  <sequence>25</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>updateInDatabase</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Стало 11 в продукте с id=6</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:11</date>
+  <millis>1607589911658</millis>
+  <sequence>26</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>createOrderInDatabase</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Заказ Скутер - 3 	1200$ 
+ подтвержден</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:12</date>
+  <millis>1607589912130</millis>
+  <sequence>28</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>getListOfOrders</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
+Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
+Кофта - 1 	20$ 
+, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
+, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
+Телефон - 4 	128$ 
+, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
+, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
+Телефон - 5 	160$ 
+, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
+, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
+, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
+Велосипед - 1 	130$ 
+, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
+, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
+, client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
+, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProducts=Кофта - 1 	22$ 
+, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
+, client=null, status=Оплачен), Order(number=34, id=58, date=2020-12-10 11:44:24.881, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Заказан), Order(number=35, id=59, date=2020-12-10 11:44:41.495, totalCost=468, allProducts=Телефон - 2 	68$ 
+Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=36, id=60, date=2020-12-10 11:45:11.508, totalCost=1200, allProducts=Скутер - 3 	1200$ 
+, client=null, status=Заказан)]</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:15</date>
+  <millis>1607589915691</millis>
+  <sequence>29</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.account.AccountController</class>
+  <method>setNewAmount</method>
+  <thread>13</thread>
+  <message>AccountController: Новый счет: -77$</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:15</date>
+  <millis>1607589915780</millis>
+  <sequence>30</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.myOrders.MyOrdersController</class>
+  <method>setNewProductStatus</method>
+  <thread>13</thread>
+  <message>MyOrdersController: Заказ с id=60 оплачен</message>
+</record>
+<record>
+  <date>2020-12-10T11:45:28</date>
+  <millis>1607589928975</millis>
+  <sequence>34</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
@@ -62,20 +356,20 @@
   <message>AdminClientsController: Список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
 </record>
 <record>
-  <date>2020-12-09T12:59:45</date>
-  <millis>1607507985771</millis>
-  <sequence>12</sequence>
+  <date>2020-12-10T11:45:29</date>
+  <millis>1607589929000</millis>
+  <sequence>35</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
   <method>getClientAccountInfo</method>
   <thread>13</thread>
-  <message>AdminClientsController: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=1481, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
+  <message>AdminClientsController: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=-77, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
 </record>
 <record>
-  <date>2020-12-09T12:59:48</date>
-  <millis>1607507988983</millis>
-  <sequence>13</sequence>
+  <date>2020-12-10T11:45:33</date>
+  <millis>1607589933107</millis>
+  <sequence>36</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
@@ -84,9 +378,9 @@
   <message>AdminClientsController: Список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=В черном списке), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
 </record>
 <record>
-  <date>2020-12-09T12:59:48</date>
-  <millis>1607507988992</millis>
-  <sequence>14</sequence>
+  <date>2020-12-10T11:45:33</date>
+  <millis>1607589933113</millis>
+  <sequence>37</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
@@ -95,9 +389,9 @@
   <message>AdminClientsController: Статус клиента успешно изменен на 'В черном списке'</message>
 </record>
 <record>
-  <date>2020-12-09T12:59:51</date>
-  <millis>1607507991354</millis>
-  <sequence>16</sequence>
+  <date>2020-12-10T11:45:36</date>
+  <millis>1607589936437</millis>
+  <sequence>39</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.myOrders.MyOrdersController</class>
@@ -141,61 +435,38 @@
 , client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
 , client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
 , client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Заказан)]</message>
+, client=null, status=Оплачен), Order(number=34, id=58, date=2020-12-10 11:44:24.881, totalCost=34, allProducts=Телефон - 1 	34$ 
+, client=null, status=Заказан), Order(number=35, id=59, date=2020-12-10 11:44:41.495, totalCost=468, allProducts=Телефон - 2 	68$ 
+Скутер - 1 	400$ 
+, client=null, status=Оплачен), Order(number=36, id=60, date=2020-12-10 11:45:11.508, totalCost=1200, allProducts=Скутер - 3 	1200$ 
+, client=null, status=Оплачен)]</message>
 </record>
 <record>
-  <date>2020-12-09T12:59:57</date>
-  <millis>1607507997745</millis>
-  <sequence>18</sequence>
+  <date>2020-12-10T11:45:46</date>
+  <millis>1607589946676</millis>
+  <sequence>41</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
-  <class>com.example.logic.myOrders.MyOrdersController</class>
-  <method>getListOfOrders</method>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
   <thread>13</thread>
-  <message>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
-Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
-Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
-, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
-Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
-Телефон - 5 	160$ 
-, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
-, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
-, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
-Велосипед - 1 	130$ 
-, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
-, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
-, client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
-, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProducts=Кофта - 1 	22$ 
-, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
-, client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Заказан)]</message>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
 </record>
 <record>
-  <date>2020-12-09T13:00:00</date>
-  <millis>1607508000963</millis>
-  <sequence>20</sequence>
+  <date>2020-12-10T11:46:08</date>
+  <millis>1607589968905</millis>
+  <sequence>43</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.account.AccountController</class>
+  <method>setNewAmount</method>
+  <thread>13</thread>
+  <message>AccountController: Новый счет: 367$</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:10</date>
+  <millis>1607589970694</millis>
+  <sequence>45</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
@@ -204,20 +475,20 @@
   <message>AdminClientsController: Список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=В черном списке), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
 </record>
 <record>
-  <date>2020-12-09T13:00:00</date>
-  <millis>1607508000971</millis>
-  <sequence>21</sequence>
+  <date>2020-12-10T11:46:10</date>
+  <millis>1607589970700</millis>
+  <sequence>46</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
   <method>getClientAccountInfo</method>
   <thread>13</thread>
-  <message>AdminClientsController: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=1481, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=В черном списке)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
+  <message>AdminClientsController: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=367, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=В черном списке)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
 </record>
 <record>
-  <date>2020-12-09T13:00:03</date>
-  <millis>1607508003217</millis>
-  <sequence>22</sequence>
+  <date>2020-12-10T11:46:13</date>
+  <millis>1607589973981</millis>
+  <sequence>47</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
@@ -226,9 +497,9 @@
   <message>AdminClientsController: Список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
 </record>
 <record>
-  <date>2020-12-09T13:00:03</date>
-  <millis>1607508003225</millis>
-  <sequence>23</sequence>
+  <date>2020-12-10T11:46:13</date>
+  <millis>1607589973985</millis>
+  <sequence>48</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.admin.adminClients.AdminClientsController</class>
@@ -237,228 +508,113 @@
   <message>AdminClientsController: Статус клиента успешно изменен на 'Обычный пользователь'</message>
 </record>
 <record>
-  <date>2020-12-09T13:00:05</date>
-  <millis>1607508005186</millis>
-  <sequence>25</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.myOrders.MyOrdersController</class>
-  <method>getListOfOrders</method>
-  <thread>13</thread>
-  <message>MyOrdersController: Список заказов: [Order(number=1, id=8, date=2020-11-10 17:58:13.555, totalCost=34, allProducts=Кофта - 1 	20$ 
-Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=2, id=9, date=2020-11-10 18:11:20.663, totalCost=20, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=3, id=10, date=2020-11-10 18:11:43.317, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=4, id=11, date=2020-11-10 19:04:46.968, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=5, id=12, date=2020-11-10 19:17:30.434, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=6, id=13, date=2020-11-10 19:49:34.351, totalCost=84, allProducts=Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=7, id=14, date=2020-11-10 19:50:51.627, totalCost=34, allProducts=Кроссовки - 1 	14$ 
-Кофта - 1 	20$ 
-, client=null, status=Оплачен), Order(number=8, id=15, date=2020-11-10 19:56:02.670, totalCost=800, allProducts=Кофта - 40 	800$ 
-, client=null, status=Оплачен), Order(number=9, id=21, date=2020-11-10 23:35:12.986, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=10, id=23, date=2020-11-11 21:48:31.694, totalCost=568, allProducts=Кофта - 20 	440$ 
-Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=11, id=24, date=2020-11-11 21:49:25.156, totalCost=128, allProducts=Телефон - 4 	128$ 
-, client=null, status=Оплачен), Order(number=12, id=25, date=2020-11-11 21:49:45.838, totalCost=380, allProducts=Кофта - 10 	220$ 
-Телефон - 5 	160$ 
-, client=null, status=Оплачен), Order(number=13, id=26, date=2020-11-11 21:54:29.163, totalCost=220, allProducts=Кофта - 10 	220$ 
-, client=null, status=Оплачен), Order(number=14, id=27, date=2020-11-11 21:54:44.170, totalCost=520, allProducts=Велосипед - 4 	520$ 
-, client=null, status=Оплачен), Order(number=15, id=28, date=2020-11-11 22:15:45.671, totalCost=152, allProducts=Кофта - 1 	22$ 
-Велосипед - 1 	130$ 
-, client=null, status=Оплачен), Order(number=16, id=29, date=2020-11-12 00:37:16.162, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=17, id=30, date=2020-11-12 00:40:04.767, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=18, id=31, date=2020-11-12 00:41:46.091, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=19, id=32, date=2020-11-12 00:42:32.836, totalCost=22, allProducts=Кофта - 1 	22$ 
-, client=null, status=Оплачен), Order(number=20, id=36, date=2020-11-12 11:28:33.449, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=21, id=37, date=2020-11-12 11:29:03.346, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=22, id=38, date=2020-11-12 11:33:54.276, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=23, id=39, date=2020-11-12 11:43:02.334, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=24, id=40, date=2020-11-12 12:15:10.367, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=25, id=41, date=2020-11-12 12:17:18.374, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=26, id=42, date=2020-11-12 12:25:10.023, totalCost=32, allProducts=Телефон - 1 	32$ 
-, client=null, status=Оплачен), Order(number=27, id=51, date=2020-11-27 15:04:53.496, totalCost=33, allProducts=Телефон - 1 	33$ 
-, client=null, status=Оплачен), Order(number=28, id=52, date=2020-11-28 13:04:24.543, totalCost=66, allProducts=Телефон - 2 	66$ 
-, client=null, status=Оплачен), Order(number=29, id=53, date=2020-12-02 19:19:48.467, totalCost=22, allProducts=Кофта - 1 	22$ 
-, client=null, status=Оплачен), Order(number=30, id=54, date=2020-12-02 19:21:43.546, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Оплачен), Order(number=31, id=55, date=2020-12-05 14:24:39.589, totalCost=34, allProducts=Телефон - 1 	34$ 
-, client=null, status=Оплачен), Order(number=32, id=56, date=2020-12-09 12:36:49.901, totalCost=400, allProducts=Скутер - 1 	400$ 
-, client=null, status=Оплачен), Order(number=33, id=57, date=2020-12-09 12:59:37.376, totalCost=14, allProducts=Кроссовки - 1 	14$ 
-, client=null, status=Заказан)]</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:07</date>
-  <millis>1607508007314</millis>
-  <sequence>27</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.account.AccountController</class>
-  <method>loadAccount</method>
-  <thread>13</thread>
-  <message>AccountController: Текущий счет: 1481$</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:07</date>
-  <millis>1607508007772</millis>
-  <sequence>28</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.account.AccountController</class>
-  <method>setNewAmount</method>
-  <thread>13</thread>
-  <message>AccountController: Новый счет: 1467$</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:08</date>
-  <millis>1607508008397</millis>
-  <sequence>29</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.myOrders.MyOrdersController</class>
-  <method>setNewProductStatus</method>
-  <thread>13</thread>
-  <message>MyOrdersController: Заказ с id=57 оплачен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:15</date>
-  <millis>1607508015304</millis>
-  <sequence>32</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.account.AccountController</class>
-  <method>setNewAmount</method>
-  <thread>13</thread>
-  <message>AccountController: Новый счет: 1468$</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:17</date>
-  <millis>1607508017147</millis>
-  <sequence>34</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:19</date>
-  <millis>1607508019300</millis>
-  <sequence>36</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:22</date>
-  <millis>1607508022272</millis>
-  <sequence>38</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:25</date>
-  <millis>1607508025043</millis>
-  <sequence>40</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:29</date>
-  <millis>1607508029234</millis>
-  <sequence>41</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
-  <method>getProductsId</method>
-  <thread>13</thread>
-  <message>AdminProductsController: id продуктов успешно получены</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:29</date>
-  <millis>1607508029515</millis>
-  <sequence>42</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
-  <method>changeCostOfProduct</method>
-  <thread>13</thread>
-  <message>AdminProductsController: Стоимость продукта с id=1 успешно изменена на 36</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:31</date>
-  <millis>1607508031222</millis>
-  <sequence>44</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=36, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:33</date>
-  <millis>1607508033553</millis>
-  <sequence>46</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=36, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:39</date>
-  <millis>1607508039611</millis>
-  <sequence>48</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.makeOrder.MakeOrderController</class>
-  <method>getListOfProducts</method>
-  <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=36, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:44</date>
-  <millis>1607508044236</millis>
-  <sequence>49</sequence>
-  <logger>javaClass</logger>
-  <level>INFO</level>
-  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
-  <method>getProductsId</method>
-  <thread>13</thread>
-  <message>AdminProductsController: id продуктов успешно получены</message>
-</record>
-<record>
-  <date>2020-12-09T13:00:44</date>
-  <millis>1607508044515</millis>
+  <date>2020-12-10T11:46:17</date>
+  <millis>1607589977952</millis>
   <sequence>50</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
-  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
-  <method>changeCostOfProduct</method>
+  <class>com.example.logic.admin.adminClients.AdminClientsController</class>
+  <method>getClientInfo</method>
   <thread>13</thread>
-  <message>AdminProductsController: Стоимость продукта с id=1 успешно изменена на 30</message>
+  <message>AdminClientsController: Список клиентов: [Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь), Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь), Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь), Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке)]</message>
 </record>
 <record>
-  <date>2020-12-09T13:00:47</date>
-  <millis>1607508047269</millis>
-  <sequence>52</sequence>
+  <date>2020-12-10T11:46:17</date>
+  <millis>1607589977957</millis>
+  <sequence>51</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.admin.adminClients.AdminClientsController</class>
+  <method>getClientAccountInfo</method>
+  <thread>13</thread>
+  <message>AdminClientsController: Счета клиентов - [Account(id=3, amount=122, client=Client(id=33, name=Justin, address=USA, login=123, password=12345, status=Обычный пользователь)), Account(id=6, amount=367, client=Client(id=36, name=maxim, address=belarus, login=1, password=1111, status=Обычный пользователь)), Account(id=10, amount=729, client=Client(id=46, name=Никита, address=Брест, login=nekit, password=12345, status=Обычный пользователь)), Account(id=15, amount=-30, client=Client(id=59, name=user1, address=USA, login=a, password=a, status=В черном списке))]</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:20</date>
+  <millis>1607589980409</millis>
+  <sequence>53</sequence>
   <logger>javaClass</logger>
   <level>INFO</level>
   <class>com.example.logic.makeOrder.MakeOrderController</class>
   <method>getListOfProducts</method>
   <thread>13</thread>
-  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=192, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=75, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=17, numOfOrder=0, order=null)] получен</message>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:23</date>
+  <millis>1607589983772</millis>
+  <sequence>55</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:27</date>
+  <millis>1607589987425</millis>
+  <sequence>57</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=30, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:31</date>
+  <millis>1607589991870</millis>
+  <sequence>58</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
+  <method>getProductsId</method>
+  <thread>13</thread>
+  <message>AdminProductsController: id продуктов успешно получены</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:31</date>
+  <millis>1607589991938</millis>
+  <sequence>59</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.admin.adminProducts.AdminProductsController</class>
+  <method>changeCostOfProduct</method>
+  <thread>13</thread>
+  <message>AdminProductsController: Стоимость продукта с id=1 успешно изменена на 55</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:34</date>
+  <millis>1607589994249</millis>
+  <sequence>61</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=55, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:36</date>
+  <millis>1607589996971</millis>
+  <sequence>63</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=55, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
+</record>
+<record>
+  <date>2020-12-10T11:46:42</date>
+  <millis>1607590002865</millis>
+  <sequence>65</sequence>
+  <logger>javaClass</logger>
+  <level>INFO</level>
+  <class>com.example.logic.makeOrder.MakeOrderController</class>
+  <method>getListOfProducts</method>
+  <thread>13</thread>
+  <message>MakeOrderController: Список продуктов [Product(number=1, id=1, name=Кофта, cost=55, country=Германия, numberInStock=230, numOfOrder=0, order=null), Product(number=2, id=2, name=Кроссовки, cost=14, country=Вьетнам, numberInStock=191, numOfOrder=0, order=null), Product(number=3, id=3, name=Телефон, cost=34, country=Китай, numberInStock=71, numOfOrder=0, order=null), Product(number=4, id=6, name=Скутер, cost=400, country=Китай, numberInStock=11, numOfOrder=0, order=null)] получен</message>
 </record>
 </log>
